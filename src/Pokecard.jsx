@@ -33,8 +33,8 @@ export default class Pokecard extends Component {
             <CardHeaderTitle>{pokemon.ename}</CardHeaderTitle>
           </CardHeader>
           <CardImage>
-            <Image style={{width: '50%', margin: 'auto'}}
-             src={this.getImageUrl()} />
+            <Image style={{width: '50%', margin: 'auto', opacity: (pokemon.caught ? '0.5' : '1') }}
+             src={this.getImageUrl()}/>
           </CardImage>
           <CardContent>
             <Content>

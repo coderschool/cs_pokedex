@@ -11,8 +11,8 @@ const PokemonStatsTable = (props) => {
         </tr>
       </thead>
       <tbody>
-        {["Attack", "Defense", "HP", "Sp.Atk", "Sp.Def", "Speed"].map(attr => (
-          <tr>
+        {["Attack", "Defense", "HP", "Sp.Atk", "Sp.Def", "Speed"].map((attr, i) => (
+          <tr key={i}>
             <td> {attr} </td>
             <td> {props.stats[attr]} </td>
           </tr>
